@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DOBON!</title><meta name="description" content="俺の見た夢ドボンクイズ。"><link rel="icon" href="favicon.svg"><link rel="stylesheet" href="style.css"><script src="questions.js" defer></script><script src="app.js" defer></script><script src="fit-screen.js" defer></script></head>
+<body><main>
+<section class="intro"><div><h1>嘘の<span>夢</span>ドボンクイズ</h1><p>一つだけある俺が「見てない夢」を選ばないようにしてください。</p></div><div class="score"><small>クリアした問題</small><strong><span id="count">0</span><i> / </i><span id="total">—</span></strong></div></section>
+<div class="board-head"><p>クリックで拡大・もう一度クリックで戻る <span>↗</span></p></div><section id="grid" aria-label="問題パネル"></section>
+<footer><button id="restart">最初から遊ぶ ↻</button></footer><p id="error" role="alert"></p></main>
+<dialog id="question" aria-labelledby="qnumber"><div class="dialog-top"><button id="close" aria-label="問題を閉じる">閉じる ✕</button></div><div class="question-content"><h2 class="panel-title" id="qnumber"></h2><button id="collapse" class="expanded-panel" aria-label="拡大した問題を閉じて一覧に戻る"><span id="prompt"></span><span class="collapse-hint">もう一度クリックするとトップに戻る ↙</span></button><section id="cleared-explanation" class="cleared-explanation" hidden><h3>コメント</h3><p id="cleared-explanation-text"></p></section><p class="hint">これは本当に見た夢？ 見てないならドボン</p><button id="yes" class="yes-answer">この夢で確定する→</button></div></dialog>
+<dialog id="result"><div id="reveal"><p class="eyebrow" id="result-label">運命の判定</p><div id="symbol">?</div><h2 id="result-title">ドボンか、それとも…</h2><p id="result-detail"></p><div class="roll-bars" id="bars"><i></i><i></i><i></i><i></i><i></i></div><button id="continue" hidden>次の問題へ</button></div></dialog>
+</body></html>
